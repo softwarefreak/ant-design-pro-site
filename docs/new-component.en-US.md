@@ -7,8 +7,8 @@ type: Development
 For some reusable UI, it is a best practice to abstract it as React components which should have these features:
 
 - Independent, reusable and stable pieces.
-- Don't contain routes info.
-- Stateless or contain isolate state within it.
+- Doesn't contain routes info.
+- Stateless or contains isolated state within it.
 
 Now we try to write a simple component as sample. Assume that you have a picture presentation UI which has fixed width, grey background, and text description like this:
 
@@ -40,7 +40,7 @@ Create a folder named `ImageWrapper` (capitalised and same as component name) un
 > export default MainComponent;
 > ```
 
-The Component source code would be like:
+The Component source code should look like:
 
 ```jsx
 // index.ts
@@ -73,7 +73,7 @@ export default ({ src, desc, style }) => (
 }
 ```
 
-Then you have a component `ImageWrapper` you can use at anywhere in your application.
+Then you have a component `ImageWrapper` which you can use anywhere in your application.
 
 ## Use it
 
